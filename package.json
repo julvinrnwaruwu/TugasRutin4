@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-scss-tugas-rutin-4",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "sass": "sass scss/main.scss css/main.css --style=expanded",
+    "sass:watch": "sass --watch scss/main.scss:css/main.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "vite": "^7.1.7"
+  }
+}

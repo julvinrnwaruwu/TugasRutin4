@@ -1,0 +1,9 @@
+#tentang {
+  ul {
+    padding-left: 20px;
+
+    li + li {
+      margin-top: 5px;
+    }
+  }
+}

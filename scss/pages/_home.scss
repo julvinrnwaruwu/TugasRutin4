@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as variables;
+
+#home {
+  figure {
+    margin: variables.$spacing-lg 0 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: variables.$radius-md;
+    }
+
+    figcaption {
+      margin-top: variables.$spacing-sm;
+    }
+  }
+}

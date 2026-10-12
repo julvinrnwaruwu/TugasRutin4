@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as variables;
+
+#kontak {
+  a {
+    color: variables.$secondary-color;
+  }
+}

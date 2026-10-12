@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as variables;
+
+footer {
+  max-width: variables.$content-max-width;
+  margin: 0 auto;
+  padding: variables.$spacing-lg;
+  text-align: center;
+
+  hr {
+    border: 0;
+    border-top: 1px solid variables.$border-color;
+  }
+}

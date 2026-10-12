@@ -1,0 +1,8 @@
+// Perulangan @each: menerapkan scroll offset ke semua section utama.
+$section-ids: home, tentang, pendidikan, proyek, kontak;
+
+@each $section in $section-ids {
+  ##{$section} {
+    scroll-margin-top: 20px;
+  }
+}

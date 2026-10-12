@@ -1,0 +1,29 @@
+// Mixin 1: pola card yang reusable
+@mixin card($background: #f5f5f5, $radius: 10px) {
+  background-color: $background;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: $radius;
+}
+
+// Mixin 2: breakpoint responsive yang reusable
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}
+
+// Mixin 3: style input/textarea yang reusable
+@mixin form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-family: inherit;
+}

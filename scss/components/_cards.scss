@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as variables;
+
+section,
+.profile-info {
+  @include mixins.card;
+
+  h2,
+  h3 {
+    margin-top: 0;
+  }
+}
+
+#pendidikan,
+#proyek {
+  article {
+    padding: variables.$spacing-md;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$radius-sm;
+    background-color: variables.$background-color;
+
+    & + article {
+      margin-top: variables.$spacing-md;
+    }
+  }
+}
